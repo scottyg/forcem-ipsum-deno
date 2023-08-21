@@ -1,0 +1,7 @@
+{
+  "lock": false,
+  "tasks": {
+    "test": "deno test -A --parallel",
+    "check": "deno fmt --check && deno lint"
+  }
+}
