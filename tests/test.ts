@@ -19,6 +19,22 @@ Deno.test("episode 1 test", () => {
   );
 });
 
+Deno.test("episode 2 test", () => {
+  const text = forcem("2", LENGTH);
+  assertStringIncludes(
+    text[0],
+    "Senator, we're making our final approach into Coruscant. Very good, Lieutenant. We made it.",
+  );
+});
+
+Deno.test("episode 3 test", () => {
+  const text = forcem("3", LENGTH);
+  assertStringIncludes(
+    text[0],
+    "Lock on to him, R2. Master, General Grievous's ship is directly ahead Master",
+  );
+});
+
 Deno.test("episode 4 test", () => {
   const text = forcem("4", LENGTH);
   assertStringIncludes(
