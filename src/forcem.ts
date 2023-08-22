@@ -242,6 +242,7 @@ export const forcem = (option: string, limit: number) => {
   content.characters.sort(function () {
     return 0.5 - Math.random();
   });
+  option = option.toString();
   if (!option) {
     option = "4";
   }
